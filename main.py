@@ -8,7 +8,7 @@ for char in range(ord('A'), ord('Z') + 1):
     folder_name = chr(char)
     folder_path = os.path.join(output_directory, folder_name)
     os.makedirs(folder_path, exist_ok=True)
-    print(f"Folder {folder_name} dibuat.")
+    print(f"Folder {folder_name} created.")
 
 # Zip folder "A" 'till "Z" in one file
 zip_file_path = os.path.join(output_directory, "A_to_Z.zip")
